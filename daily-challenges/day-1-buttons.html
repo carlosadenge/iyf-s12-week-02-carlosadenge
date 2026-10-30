@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 - Button Styles</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            padding: 2rem;
+            background: #f8fafc;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        /* Primary */
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        /* Secondary (Outline) */
+        .btn-secondary {
+            background-color: transparent;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+        .btn-secondary:hover {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        /* Danger */
+        .btn-danger {
+            background-color: #ef4444;
+            color: white;
+        }
+        .btn-danger:hover {
+            background-color: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        /* Disabled */
+        .btn-disabled {
+            background-color: #94a3b8;
+            color: #e2e8f0;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Day 1 – Button Styles</h1>
+
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-secondary">Secondary Button</button>
+    <button class="btn btn-danger">Danger Button</button>
+    <button class="btn btn-disabled" disabled>Disabled Button</button>
+
+</body>
+</html>
