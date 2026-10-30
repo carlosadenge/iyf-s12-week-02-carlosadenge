@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - Footer Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            background: #f8fafc;
+        }
+
+        footer {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 3rem 1.5rem 1.5rem;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col p,
+        .footer-col a {
+            color: #94a3b8;
+            text-decoration: none;
+            line-height: 1.8;
+            display: block;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .social a {
+            font-size: 1.4rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Day 5 – Footer Design</h1>
+        <p>Scroll down to see the footer.</p>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About</h3>
+                    <p>Learning web development at IYF Weekend Academy Season 12.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <a href="mailto:carlosadenge@gmail.com">carlosadenge@gmail.com</a>
+                    <p>Kenya • EAT</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Follow</h3>
+                    <div class="social">
+                        <a href="#">🐙</a>
+                        <a href="#">💼</a>
+                        <a href="#">🐦</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Carlos Adenge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
